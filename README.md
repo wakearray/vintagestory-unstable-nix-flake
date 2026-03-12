@@ -1,0 +1,28 @@
+# Vintage Story Unstable
+
+This flake exists to make it easier for nix and NixOS users to play the most up to date unstable releases from the Vintage Story team.
+
+## How to run
+
+Assuming you have flakes enabled, all you need to do is enter:
+
+```bash
+nix run github:wakearray/vintagestory-unstable-nix-flake
+```
+
+If you don't have flakes enabled and don't want to enable them permanently, you can use:
+
+```bash
+nix --extra-experimental-features 'nix-command flakes' run github:wakearray/vintagestory-unstable-nix-flake
+```
+
+## Updates
+
+I'll try to keep this up to date with new releases within 24 hours of a new release, but I don't yet have experience with CI tools so I'll be doing it somewhat manually for the time being. If there's more than 24 hours since a new release has dropped, feel free to submit an issue and I'll do my best to push an update.
+
+Thanks for your patience
+
+## Extra thanks to
+
+- Vintage Story devs who made it possible to check for new versions with a JSON based API
+- The nixpkgs maintainers of the stable release of Vintage Story as I only slightly modified their package file to support the unstable releases
