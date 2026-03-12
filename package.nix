@@ -30,7 +30,7 @@ assert waylandSupport -> wayland != null;
 assert waylandSupport -> libxkbcommon != null;
 
 stdenv.mkDerivation (finalAttrs: {
-  pname = "vintagestory";
+  pname = "vintagestory-unstable";
   version = "1.22.0-rc.2";
 
   src = fetchurl {
