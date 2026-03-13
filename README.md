@@ -16,6 +16,11 @@ If you don't have flakes enabled and don't want to enable them permanently, you 
 nix --extra-experimental-features 'nix-command flakes' run github:wakearray/vintagestory-unstable-nix-flake
 ```
 
+You may also wish to set a different data path using the `--dataPath` flag to avoid an unstable version of the game from having access to your normal files:
+```bash
+nix run github:wakearray/vintagestory-unstable-nix-flake -- --dataPath "$HOME/.config/VintagestoryUnstableData/"
+```
+
 ## Updates
 
 I'll try to keep this up to date with new releases within 24 hours of a new release, but I don't yet have experience with CI tools so I'll be doing it somewhat manually for the time being. If there's more than 24 hours since a new release has dropped, feel free to submit an issue and I'll do my best to push an update.

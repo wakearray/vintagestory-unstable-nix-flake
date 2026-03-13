@@ -74,16 +74,6 @@ stdenv.mkDerivation (finalAttrs: {
       comment = "Innovate and explore in an unstable sandbox world";
       categories = [ "Game" ];
     })
-
-    (makeDesktopItem {
-      name = "vsumodinstall-handler";
-      desktopName = "Vintage Story Unstable 1-click Mod Install Handler";
-      comment = "Handler for vintagestorymodinstall:// URI scheme";
-      exec = "vintagestory -i %u";
-      mimeTypes = [ "x-scheme-handler/vintagestorymodinstall" ];
-      noDisplay = true;
-      terminal = false;
-    })
   ];
 
   installPhase = ''
