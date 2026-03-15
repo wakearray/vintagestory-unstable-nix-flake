@@ -1,5 +1,12 @@
 # Vintage Story Unstable
 
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmods.vintagestory.at%2Fapi%2Fgameversions&query=%24.gameversions%5B-1%3A%5D.name
+
+<center>
+  <img alt="Flake Version: 1.20.0-rc.3" src="https://img.shields.io/badge/Flake Version-1.20.0--rc.3-blue">
+  <img alt="Current Release Version: " src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmods.vintagestory.at%2Fapi%2Fgameversions&query=%24.gameversions%5B-1%3A%5D.name&label=Released%20Version">
+</center>
+
 This flake exists to make it easier for nix and NixOS users to play the most up to date unstable releases from the Vintage Story team.
 
 ## How to run
