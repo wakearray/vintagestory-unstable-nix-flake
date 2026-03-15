@@ -1,7 +1,7 @@
 # Vintage Story Unstable
 
 <center>
-  <img alt="Flake Version: 1.22.0-rc.2" src="https://img.shields.io/badge/Flake-Version-1.22.0--rc.2-blue">
+  <img alt="Flake Version: 1.22.0-rc.2" src="https://img.shields.io/badge/Flake_Version-1.22.0--rc.2-blue">
   <img alt="Current Release Version: " src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmods.vintagestory.at%2Fapi%2Fgameversions&query=%24.gameversions%5B-1%3A%5D.name&label=Released%20Version">
 </center>
 

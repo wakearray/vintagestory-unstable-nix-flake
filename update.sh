@@ -25,7 +25,7 @@ function update_package_version() {
   new_version_number_escaped="${new_version//"-"/"--"}"
 
   # Add escaped version number to badge
-  new_version_badge_url="https:\/\/img.shields.io\/badge\/Flake-Version-$new_version_number_escaped-blue"
+  new_version_badge_url="https:\/\/img.shields.io\/badge\/Flake_Version-$new_version_number_escaped-blue"
 
   # Replace the Flake Version badge URL in README.md
   sed -i "s/<img alt=\"Flake Version: .*\" src=\"https:\/\/img.shields.io\/badge\/Flake-Version-.*\">/<img alt=\"Flake Version: $new_version\" src=\"$new_version_badge_url\">/" "./README.md"
