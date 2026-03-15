@@ -22,13 +22,13 @@ function update_package_version() {
   sed -i "s/^    hash = \".*\";/    hash = \"$new_hash\";/" "./package.nix"
 
   # img.shields.io requires dashes to be escaped with an additional dash
-  new_version_number_escaped="$(sed "s/-/--/g" "$new_version")"
+  new_version_number_escaped="${new_version//"-"/"--"}"
 
   # Add escaped version number to badge
-  new_version_badge_url="https://img.shields.io/badge/Flake-Version-$new_version_number_escaped-blue"
+  new_version_badge_url="https:\/\/img.shields.io\/badge\/Flake-Version-$new_version_number_escaped-blue"
 
   # Replace the Flake Version badge URL in README.md
-  sed -i "s/<img alt=\"Flake Version: .*\" src=\"https://img.shields.io/badge/Flake-Version-.*\">/<img alt=\"Flake Version: $new_version\" src=\"$new_version_badge_url\">/" "./README.md"
+  sed -i "s/<img alt=\"Flake Version: .*\" src=\"https:\/\/img.shields.io\/badge\/Flake-Version-.*\">/<img alt=\"Flake Version: $new_version\" src=\"$new_version_badge_url\">/" "./README.md"
 
   # Update the git repo, but don't push to remote
   git add ./package.nix
