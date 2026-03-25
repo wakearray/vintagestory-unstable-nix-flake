@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${finalAttrs.version}.tar.gz";
-    hash = "sha256-ey9xJIWJrK4orYtsE9Bzfwuy7Ngal2shkoU62HLKvpc=";
+    hash = "sha256-MvVH9hgM/mcFJ5l89rrnuIP9QfCB/ApOdaj3ja7IHn8=";
   };
 
   nativeBuildInputs = [
