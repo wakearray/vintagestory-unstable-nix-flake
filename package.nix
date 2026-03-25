@@ -31,7 +31,7 @@ assert waylandSupport -> libxkbcommon != null;
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "vintagestory-unstable";
-  version = "1.22.0-rc.2";
+  version = "1.22.0-rc.5";
 
   src = fetchurl {
     url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${finalAttrs.version}.tar.gz";
